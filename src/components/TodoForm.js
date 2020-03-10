@@ -18,9 +18,10 @@ class TodoForm extends Component {
     e.preventDefault();
     this.props.addTask(this.state.task);
     this.setState({
-      item: ''
+      task: ''
     });
   };
+
 
   render() {
     return (

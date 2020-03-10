@@ -4,10 +4,10 @@ import React, { Component } from 'react';
 import Todo from './Todo';
 
 const TodoList = props => {
+  console.log(props)
   return (
     <div>
-      console.log(props)
-      {props.tasks.map(todo => (
+      {props.task.map(todo => (
         <Todo
           key={todo.id}
           task={todo}
